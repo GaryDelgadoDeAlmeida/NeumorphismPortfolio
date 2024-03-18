@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+    // Primary colors
+    --c-white: #ffffff;
+    --c-lightGray: #f2f2f2;
+    --c-gray: #a9a9a9;
+    --c-silver: #c8c8c8;
+    --c-red: #c00000;
+    --c-darkRed: #8B0000;
+    --c-green: #188038;
+    --c-orange: #ffa500;
+    --c-blue: #2962ff;
+    --c-black: #000000;
+}
+
+@mixin desktop {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tiny_mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+
+@import "./parts/site";
+@import "./parts/form";
+@import "./parts/button";
+@import "./parts/card";
+@import "./parts/card_service";
+@import "./parts/card_portfolio";
+@import "./parts/helper";
