@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import ContactForm from "../forms/ContactForm";
+import PortfolioCard from "../components/PortfolioCard";
 
 export default function Home() {
 
@@ -203,42 +204,12 @@ export default function Home() {
                 <h2 className={"section-title"}>My <span className={"c-green"}>portfolio</span></h2>
 
                 <div className={"d-grid -col-3"}>
-                    <div className={"card-portfolio"}>
-                        <div className={"-header"}>
-                            <img src={`${window.location.origin}/content/img/portfolio.png`} alt={""} />
-                        </div>
-                        <div className={"-content"} hidden></div>
-                    </div>
-                    <div className={"card-portfolio"}>
-                        <div className={"-header"}>
-                            <img src={`${window.location.origin}/content/img/portfolio.png`} alt={""} />
-                        </div>
-                        <div className={"-content"} hidden></div>
-                    </div>
-                    <div className={"card-portfolio"}>
-                        <div className={"-header"}>
-                            <img src={`${window.location.origin}/content/img/portfolio.png`} alt={""} />
-                        </div>
-                        <div className={"-content"} hidden></div>
-                    </div>
-                    <div className={"card-portfolio"}>
-                        <div className={"-header"}>
-                            <img src={`${window.location.origin}/content/img/portfolio.png`} alt={""} />
-                        </div>
-                        <div className={"-content"} hidden></div>
-                    </div>
-                    <div className={"card-portfolio"}>
-                        <div className={"-header"}>
-                            <img src={`${window.location.origin}/content/img/portfolio.png`} alt={""} />
-                        </div>
-                        <div className={"-content"} hidden></div>
-                    </div>
-                    <div className={"card-portfolio"}>
-                        <div className={"-header"}>
-                            <img src={`${window.location.origin}/content/img/portfolio.png`} alt={""} />
-                        </div>
-                        <div className={"-content"} hidden></div>
-                    </div>
+                    <PortfolioCard />
+                    <PortfolioCard />
+                    <PortfolioCard />
+                    <PortfolioCard />
+                    <PortfolioCard />
+                    <PortfolioCard />
                 </div>
             </div>
             

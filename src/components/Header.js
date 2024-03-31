@@ -28,12 +28,14 @@ export default function Header(props) {
             </div>
             <div className={"page-content"}>
                 <div className={"page-banner"}>
-                    <div className={"menu"}>
-                        <a href={"/"}>Home</a>
-                        <a href={"/#about"}>About</a>
-                        <a href={"/#services"}>Services</a>
-                        <a href={"/#portfolio"}>Portfolio</a>
-                        <a href={"/#contact"}>Contact</a>
+                    <div className={"mobile-menu"}>
+                        <div className={"-links"}>
+                            <a href={"/"}>Home</a>
+                            <a href={"/#about"}>About</a>
+                            <a href={"/#services"}>Services</a>
+                            <a href={"/#portfolio"}>Portfolio</a>
+                            <a href={"/#contact"}>Contact</a>
+                        </div>
                     </div>
                 </div>
                 <div className={"page-wrapper"}>
