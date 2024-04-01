@@ -16,6 +16,10 @@ html, body, .page {
         background-color: var(--c-white);
         border-left: 1px solid var(--c-black);
 
+        @include tablet {
+            display: none;
+        }
+
         .header-menu {
             padding: 25px;
 
@@ -75,17 +79,23 @@ html, body, .page {
         height: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
+        scroll-behavior: smooth;
 
         .page-banner {
-            height: 75px;
             display: none;
-            background-color: var(--c-white);
 
             @include tablet {
-                display: initial;
+                height: 75px;
+                display: block;
+                background-color: var(--c-white);
 
                 .mobile-menu {
                     // 
+
+                    .-links {
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
             }
         }

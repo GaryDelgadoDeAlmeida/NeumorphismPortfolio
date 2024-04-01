@@ -28,7 +28,17 @@ export default function Header(props) {
             </div>
             <div className={"page-content"}>
                 <div className={"page-banner"}>
+                    <input id={"barInput"} type={"checkbox"} hidden />
+                    
+                    <label htmlFor={"barInput"}>
+                        <img src={`${window.location.origin}/content/svg/bar.svg`} alt={""} />
+                    </label>
+
                     <div className={"mobile-menu"}>
+                        <label htmlFor={"barInput"}>
+                            <img src={`${window.location.origin}/content/svg/bar.svg`} alt={""} />
+                        </label>
+
                         <div className={"-links"}>
                             <a href={"/"}>Home</a>
                             <a href={"/#about"}>About</a>
